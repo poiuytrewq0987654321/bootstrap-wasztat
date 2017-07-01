@@ -1,0 +1,98 @@
+*{
+    box-sizing:boder-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    color:#777;
+}
+
+a.btn-blue, .btn-blue{
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    transition: all .3s;
+    padding: 15px 30px;
+}
+
+a.btn-blue, .btn-blue:hover{
+    background-color: #fff;
+    border:1px solid #0ed8d6;
+    color: #0ed8d6;
+}
+
+#main-nav {
+   background-color: transparent;
+   background: transparent;
+   border:0;
+}
+
+#main-nav a.navbar-brand{
+    font-size:2em;
+    font-family:'Droid Serif', sans-serif;
+    text-transform: none;
+}
+
+#main-nav a{
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-nav a:hover{
+    color:#0ed8d6;
+}
+
+
+#nav-button>a{
+    color:#fff;
+    font-weight: 500;
+    font-style:italic;
+}
+
+
+/* header start */
+
+#main-header{
+    height:100vh;
+    width:100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url("../img/header/pictures_on_the_wall.jpg");
+    background-size:100%;
+    background-size: cover;
+    position: relative;
+}
+
+#main-header .header-caption{
+    position: absolute;
+    left:0;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    margin: auto;
+    text-align: center;
+    color:#fff;
+}
+
+/* header stop */
+
+/* section services start */
+
+section>div>h5{
+    font-weight: bold;
+}
+
+.fa{
+    padding:15px;
+    border-radius:100%;
+    border:1px solid black;
+    left:0;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/* section services stop */
