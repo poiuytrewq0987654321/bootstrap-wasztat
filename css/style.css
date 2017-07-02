@@ -71,6 +71,10 @@ color: #333;
     margin:40px 0 0 0;
 }
 
+h1{
+    text-transform: uppercase;
+}
+
 /* header start */
 
 #main-header{
@@ -227,12 +231,12 @@ color: #333;
 }
 
 #team .fa{
-    width:40px;
-    height:40px;
-    line-height: 40px;
+    width:35px;
+    height:35px;
+    line-height: 35px;
     border-radius:100%;
-    border:1px solid #000;
-    background-color: #000;
+    border:1px solid #222222;
+    background-color: #222222;
     color:#fff;
     transition: all .3s;
     margin:5px;
@@ -260,12 +264,48 @@ color: #333;
     background-image: url(../img/team/woman-1.jpg);
 }
 
-
-
-
-
-
 /* section team stop */
+
+/* section contact start */
+
+#contact {
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/footer/world-map.jpg);
+    color:#fff;
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 50px 0;
+}
+
+#contact h1, #contact p{
+    color:#fff;
+}
+
+#contact input:not([type='submit']), #contact textarea{
+width:100%;
+    border:0px solid;
+}
+
+#contact input, #contact textarea{
+    text-transform: uppercase;
+    padding:15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:5px;
+}
+
+#contact input:not(:last-child){
+    margin-bottom:30px;
+}
+
+#contact input[type='submit']{
+    margin-top:30px;
+}
+
+
+
+
+
+
+/* section contact stop */
 
 
 
