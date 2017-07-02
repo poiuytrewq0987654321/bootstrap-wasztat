@@ -68,6 +68,7 @@ h3{
 h1,h2,h3,h4,h5{
 font-family:'montserrat', sans-serif;
 color: #333;
+    margin:40px 0 0 0;
 }
 
 /* header start */
@@ -97,11 +98,11 @@ color: #333;
 
 /* section services start */
 #services{
-    margin:0 0 100px 0;
+    margin:20px;
 }
 
 #services-header{
-    margin:100px 0 40px 0;
+    
 }
 
 #services .fa{
@@ -130,72 +131,151 @@ color: #333;
     background-color: #f7f7f7;
 }
 
-#portfolio-header{
+#portfolio .single-portfolio-item{
+    background-color: #fff;
+    margin-bottom:20px;
 }
 
-.portfolio-zdjecie{
-    height:200px;
+#portfolio .portfolio-image-container{
+    height:300px;
     overflow:hidden;
-    margin: 15px 0 15px 0;
 }
 
-#portfolio-zdjecie-1{
-    background-image: url(../img/portfolio/box_of_cookies.jpg);
+#portfolio .single-portfolio-item .portfolio-image{
+    background-position: center;
     background-size: cover;
-}
-#portfolio-zdjecie-2{
-    background-image: url(../img/portfolio/chaotic_paint.jpg);
-    background-size: cover;
-}
-#portfolio-zdjecie-3{
-    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
-    background-size: cover;
-}
-#portfolio-zdjecie-4{
-    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
-    background-size: cover;
-}
-#portfolio-zdjecie-5{
-    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
-    background-size: cover;
-}
-#portfolio-zdjecie-6{
-    background-image: url(../img/portfolio/typing_on_laptop.jpg);
-    background-size: cover;
-}
-
-div.item-mask{
+    background-repeat: no-repeat;
     height:100%;
     position: relative;
+    transition: 0.3s;
 }
 
-div.item-mask:hover{
-    background-color: #0ed8d6;
-    opacity:0.7;
+#portfolio .single-portfolio-item .portfolio-image:hover{
+    transform: scale(1.2);
 }
 
-div.item-plus{
+#portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask{
+    background-color: rgba(14,216,214,0.85);
+    width:100%;
+    height:100%;
+    position: absolute;
+    opacity:0;
+    transition: all 0.3s;
+    cursor:pointer;
+}
+
+#portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask:hover{
+    opacity:1;
+}
+
+#portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask .fa{
     color:#fff;
     position: absolute;
     top:50%;
+    transform: translateY(-50%);
     left:0;
     right:0;
-   transform: translateY(-50%);
-    visibility: hidden;
+    margin:auto;
 }
 
-div.item-plus:hover{
-    opacity:1;
-    visibility: visible;
+#portfolio-item-1{
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+    
 }
-
-.item-plus i{
-    margin:0 auto;
-    padding:0;
+#portfolio-item-2{
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
 }
-
-
-
-
+#portfolio-item-3{
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+#portfolio-item-4{
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+#portfolio-item-5{
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+#portfolio-item-6{
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
 
 /* section portfolio stop */
+
+
+/* section team start */
+
+#team{
+}
+
+.team-content{
+    margin:0 0 40px 0;
+}
+
+
+#team .team-image{
+    height:200px;
+    width:200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left:0;
+    right:0;
+    margin:auto;
+    border-radius:50%;
+}
+#team .team-image{
+    cursor: crosshair;
+}
+
+#team .fa{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius:100%;
+    border:1px solid #000;
+    background-color: #000;
+    color:#fff;
+    transition: all .3s;
+    margin:5px;
+}
+
+#team .fa:hover{
+    border:1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    color:#fff;
+}
+
+#team-paragraph{
+    margin: 40px;
+}
+
+#image1{
+    background-image: url(../img/team/man-1.jpg);
+}
+
+#image2{
+    background-image: url(../img/team/man-2.jpg);
+}
+
+#image3{
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+
+
+
+
+
+/* section team stop */
+
+
+
+
+
+
+
+
+
+
+
+
+

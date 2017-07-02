@@ -8,4 +8,10 @@ $(window).scroll(function() {
         $("#main-nav").css('background-color','transparent').css('opacity','1')
     }
 });
+
+$("a[href*='#']").click(function(){
+    $('body').animate({
+        scrollTop: $(this.hash).offset().top - 10
+    },500);
+})
                  
