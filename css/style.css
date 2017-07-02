@@ -80,6 +80,13 @@ a.btn-blue, .btn-blue:hover{
 /* header stop */
 
 /* section services start */
+#services{
+    overflow:hidden;
+}
+
+#services-header{
+    height:200px;
+}
 
 section>div>h5{
     font-weight: bold;
@@ -88,11 +95,23 @@ section>div>h5{
 .fa{
     padding:15px;
     border-radius:100%;
-    border:1px solid black;
+    border:1px solid #0ed8d6;
+    background-color: #0ed8d6;
+    color:#fff;
     left:0;
     right:0;
     top:50%;
     transform: translateY(-50%);
 }
 
+.fa:hover{
+    border:1px solid #0ed8d6;
+    background-color: #fff;
+    color:#0ed8d6;
+}
 /* section services stop */
+
+/* section portfolio start */
+
+
+/* section portfolio stop */
