@@ -30,6 +30,10 @@ a.btn-blue, .btn-blue:hover{
    border:0;
 }
 
+.navscrolled {
+    background-color: #0ed8d6;
+}
+
 #main-nav a.navbar-brand{
     font-size:2em;
     font-family:'Droid Serif', sans-serif;
@@ -53,6 +57,18 @@ a.btn-blue, .btn-blue:hover{
     font-style:italic;
 }
 
+h1{
+    font-size:4em;
+}
+
+h3{
+    font-size:1.2em;
+}
+
+h1,h2,h3,h4,h5{
+font-family:'montserrat', sans-serif;
+color: #333;
+}
 
 /* header start */
 
@@ -81,49 +97,31 @@ a.btn-blue, .btn-blue:hover{
 
 /* section services start */
 #services{
+    margin:0 0 100px 0;
 }
 
 #services-header{
-    margin:45px 0 45px 0;
+    margin:100px 0 40px 0;
 }
 
-section>div>h5{
-    font-weight: bold;
-}
-
-.fa{
+#services .fa{
     padding:15px;
     border-radius:100%;
     border:1px solid #0ed8d6;
     background-color: #0ed8d6;
     color:#fff;
     margin:15px;
-    animation: rotation-back 0.6s linear;
+    transition: all .3s;
     
 }
 
-.fa:hover{
+#services .fa:hover{
     border:1px solid #0ed8d6;
     background-color: #fff;
     color:#0ed8d6;
-    animation:  rotation 0.6s linear;
+    transform: rotate(360deg);
 }
 
-@keyframes rotation { 
-        from { 
-            transform: rotate(0deg); 
-        } to { 
-            transform: rotate(360deg); 
-        }
-    }
-
-@keyframes rotation-back { 
-        from { 
-            transform: rotate(0deg); 
-        } to { 
-            transform: rotate(-360deg); 
-        }
-    }
 /* section services stop */
 
 /* section portfolio start */
@@ -136,12 +134,31 @@ section>div>h5{
 }
 
 .portfolio-zdjecie{
-    height:300px;
-    
+    height:200px;
 }
 
 #portfolio-zdjecie-1{
     background-image: url(../img/portfolio/box_of_cookies.jpg);
+    background-size: cover;
+}
+#portfolio-zdjecie-2{
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+    background-size: cover;
+}
+#portfolio-zdjecie-3{
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+    background-size: cover;
+}
+#portfolio-zdjecie-4{
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+    background-size: cover;
+}
+#portfolio-zdjecie-5{
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+    background-size: cover;
+}
+#portfolio-zdjecie-6{
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
     background-size: cover;
 }
 
